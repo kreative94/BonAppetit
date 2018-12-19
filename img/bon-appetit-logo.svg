@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 41">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-size: 31px;
+        font-family: Mostter;
+        letter-spacing: -0.066em;
+      }
+    </style>
+  </defs>
+  <text id="Bon_Appétit" data-name="Bon Appétit" class="cls-1" transform="translate(0 25)"><tspan x="0" y="0">Bon</tspan><tspan y="0"> </tspan><tspan y="0">Appétit</tspan></text>
+</svg>

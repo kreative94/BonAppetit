@@ -1,0 +1,290 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: black;
+}
+
+#home-body{
+    background: white;
+}
+h1{
+    font-family: "Vidaloka", serif;
+    font-size: 36px;
+}
+
+h2{
+    font-family: "Heebo", "sans-serif";
+    font-size: 32px;
+    font-weight: 900;
+}
+
+h3{
+    font-family: "Heebo", "sans-serif";
+    font-size: 28px; 
+    font-weight: 700;
+}
+
+h4{
+    font-family: "Heebo", "sans-serif";
+    font-size: 24px; 
+    font-weight: 500;
+}
+
+h5{
+    font-family: "Heebo", "sans-serif";
+    font-size: 21px; 
+    font-weight: 300;
+}
+
+h6{
+    font-family: "Heebo", "sans-serif";
+    font-size: 18px; 
+    font-weight: 100;
+}
+
+p{
+    font-family: "Heebo", "sans-serif";
+    font-size: 16px; 
+    font-weight: 300;
+}
+
+
+/*=============Navigation==================*/
+#splash-nav{
+    display: grid;
+    justify-content: right;
+    padding: 0px 50px;
+    border-bottom: .5px solid white;
+}
+
+.menu{
+    color: white;
+}
+
+.menu li{
+    display: inline;
+    margin: 0px 10px;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+}
+
+#splash{
+    height: 100vh;
+    display: block;
+    position: relative;
+}
+
+#splash::after{
+    opacity: 0.5;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-image: url("../img/recipe-of-the-day.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    content: "";
+}
+
+/**********Content************/
+
+.logo{
+    object-fit: cover;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.slogan{
+    text-align: center;
+    color: white;
+}
+
+.content{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    height: 90%;
+}
+
+#recipe-splash h6{
+    text-decoration: underline;
+    margin: 0;
+    color: white;
+    border-bottom: 1px solid white;
+    text-align: center;
+    width: 35%;
+    margin: 0 auto;
+}
+
+#recipe-splash{
+    color: white;
+    display: grid;
+    justify-content: center;
+    height: 30%;
+}
+
+.enter-site{
+    color: white;
+    display: flex;
+}
+
+.enter-site button{
+    height: 35px;
+    width: 27px;
+    margin-left: 10px;
+    background: url("../img/triangle-button.svg");
+    border: none;
+    background-size: cover;
+    align-self: flex-end;
+}
+
+#recipe-splash a{
+    margin: 0 auto;
+}
+
+.recipe-day{
+    background: #CB1A1A;
+    border: none;
+    width: auto;
+    padding: 0px 15px;
+    height: 35px;
+    color: white;
+}
+
+/*========= Home - Nav ===========*/
+#home{
+    height: auto;
+}
+#home #home-nav{
+    background: #CB1A1A;
+    height: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#home-nav .logo{
+    width: 200px;
+    margin-left: 50px;
+}
+
+#home-nav .menu{
+    justify-self: end;
+    margin-right: 50px;
+}
+/*========= What's New =============*/
+#home .content{
+    display: block;
+    height: auto;
+}
+
+.section-title{
+    text-align: center;
+}
+
+#whats-new .container{
+    display: grid;
+    grid-template-columns: repeat(2 1fr);
+    grid-template-areas: "a b"
+        "a c";
+    grid-gap: 50px;
+    width: 50%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.recipe{
+    width: auto;
+}
+
+.recipe .thumbnail{
+    width: 100%;
+    overflow: hidden;
+    margin: 0px;
+}
+
+.recipe .thumbnail img{
+    width: 100%;
+    object-fit: cover;
+}
+
+#recipe-of-day{
+    grid-area: a;
+    
+}
+
+#whats-new .recipe:nth-child(2){
+    grid-area: b;
+}
+
+#whats-new .recipe:nth-child(3){
+    grid-area: c;
+}
+
+.recipe-title{
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+/*=========Holiday Recipes ========*/
+#holiday{
+    height: 85vh;
+    margin-top: 50px;
+    background-image: url("../img/annie-spratt-469224-unsplash.jpg");
+    background-size: cover;
+    width: 100%;
+}
+
+#holiday .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
+    height: 80%;
+    grid-gap: 50px;
+    margin: 0px 75px;
+}
+
+.holiday-recipe{
+    align-self: center;
+}
+
+.holiday-recipe .thumbnail{
+    border-radius: 50%;
+    padding: 0;
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+/*=========Recipes************/
+/* #recipes .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr));
+    grid-gap: 2%;
+    margin: 75px;
+} */
+
+#recipes .container{
+    column-count: 4;
+    column-count: 20px;
+}
+
+#recipes .recipe{
+    width: auto;
+    display: inline-block;
+}
+
+.recipe .far{
+    position: relative;
+    color: white;
+    top: 50px;
+    margin: 0px;
+    font-size: 2em;
+    left: 17vw;
+}
